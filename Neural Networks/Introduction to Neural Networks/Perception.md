@@ -87,7 +87,63 @@ XOR Truth Table
 | 1         | 0          | 1    |
 | 1         | 1          | 0    |
 
-## XOR Gate with Neural Networks
+
+
+# Perceptron Trick
+
+For finding best line,
+
+- we need to subtract for misclassified lines
+
+- for correctly classified lines, use addition
+
+  
+
+Let's say we have an equation
+
+3x<sub>1</sub> + 4x<sub>2</sub> - 10 = 0
+
+and Poin: (4, 5)
+
+```python
+3 	4	-10
+4	5	1
+_________(-)
+-1	-1	 -11
+```
+
+this line moves drastically towards the point, so to prevent this, we use learning rate
+
+Say **Learning rate = 0.1**
+
+before subtraction, multiply with learning rate
+
+```java
+3 		4		-10
+4*0.1	5*0.1	1*0.1
+______________________(-)
+2.6		3.5		-10.1
+```
+
+
+
+# Perceptron Algorithm
+
+Steps -
+
+Start with some random weight and bias
+
+For every misclassified point
+
+- If the prediction is zero
+  - that means positive point in negative area
+  - change w1 + ax. where a is learning rate
+  - change b to b + a
+
+- If the prediction is 1 then
+  - that means negative point in the positive area
+  -  change w1 - ax. where a is learning rate
+  - change b to b - a
 
 
 
