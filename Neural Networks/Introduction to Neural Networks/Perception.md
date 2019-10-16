@@ -19,11 +19,7 @@ Perceptron has the following characteristics:
 
 Types of activation functions include the sign, step, and sigmoid functions.
 
-
-
-### Introduced by Frank Rosenblatt in 1957
-
-
+## Introduced by Frank Rosenblatt in 1957
 
 # Function
 
@@ -45,11 +41,7 @@ In the equation given above:
 
 The output can be represented as “1” or “0.”  It can also be represented as “1” or “-1” depending on which activation function is used.
 
-Let us learn the inputs of a perceptron in the next section.
-
-
-
-# Types of Logic gate
+## Types of Logic gate
 
 - AND
 - NAND
@@ -87,8 +79,6 @@ XOR Truth Table
 | 1         | 0          | 1    |
 | 1         | 1          | 0    |
 
-
-
 # Perceptron Trick
 
 For finding best line,
@@ -103,7 +93,7 @@ Let's say we have an equation
 
 3x<sub>1</sub> + 4x<sub>2</sub> - 10 = 0
 
-and Poin: (4, 5)
+and Point: (4, 5)
 
 ```python
 3 	4	-10
@@ -145,7 +135,43 @@ For every misclassified point
   -  change w1 - ax. where a is learning rate
   - change b to b - a
 
+# Non Linear Problem
 
+Let's say data is more complex and it is no longer separable with a single line
+
+So here the solution is using a **Curve** instead of **Line**. By modifying error function, we can solve this problem.
+
+### Error function
+
+Simply it's tells how far we are from the solution.
+
+## Log loss error function
+
+We are using continuous prediction instead of discreate predication. Actually contentious prediction, provide probability distribution instead of 0 and 1.
+
+Steps -
+
+1. Sum all the point including misclassified and correctly classified.
+2. Make some changes
+3. Calculate error some again
+
+Our goal is make the error **smaller**.
+
+The way to move from discreate output to contentious output, just simply change the step function with sigmoid function.
+
+## Sigmoid function
+
+Simply a function, which convert large positive number into close to one and large negative number into close to zero and the number that are close to zero, will convert close to 0.5. So it's return the values between 0 and 1.
+
+ ![{\displaystyle S(x)={\frac {1}{1+e^{-x}}}={\frac {e^{x}}{e^{x}+1}}.}](https://wikimedia.org/api/rest_v1/media/math/render/svg/9537e778e229470d85a68ee0b099c08298a1a3f6) 
+
+
+
+So the new perceptron equation -
+
+```
+σ(wx+b)
+```
 
 # Tutorials
 
