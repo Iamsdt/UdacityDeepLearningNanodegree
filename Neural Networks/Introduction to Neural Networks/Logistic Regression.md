@@ -16,7 +16,19 @@ Graphical Representation -
 
 # Calculating the Error Function
 
-![1571457968174](C:\Users\Shudipto\AppData\Roaming\Typora\typora-user-images\1571457968174.png)
+For binary classification:
+
+![Error Function](https://github.com/Iamsdt/UdacityDeepLearningNanodegree/raw/master/img/Annotation%202019-10-19%20100454.png)
+
+For multiclass classification:
+
+![1571458664524](C:\Users\Shudipto\AppData\Roaming\Typora\typora-user-images\1571458664524.png)
+
+Where, m = number of classes.
+
+Both are same, if there is two classes
+
+
 
 ## References
 
