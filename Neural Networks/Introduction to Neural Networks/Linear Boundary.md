@@ -17,5 +17,5 @@ W <sub>1</sub>X<sub>1</sub> + W<sub>2</sub>X<sub>2</sub> + W<sub>3</sub>X<sub>3<
 
 If we have n dimension
 ```
-w1x1 + w2x2 + wnxn + b = 0 
+W1X1 + W2X2 + WnXn + b = 0 
 ```
