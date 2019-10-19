@@ -28,13 +28,13 @@ It's simply says, the difference between two vectors.
 
 Three door with gift and no gift
 
-![1571201913906](C:\Users\Shudipto Trafder\AppData\Roaming\Typora\typora-user-images\1571201913906.png)
+![1571201913906](https://github.com/Iamsdt/UdacityDeepLearningNanodegree/raw/master/img/1571201913906.png)
 
 Now construct an equation
 
 ## Equation
 
-![1571202865821](C:\Users\Shudipto Trafder\AppData\Roaming\Typora\typora-user-images\1571202865821.png)
+![1571202865821](https://github.com/Iamsdt/UdacityDeepLearningNanodegree/raw/master/img/1571202865821.png)
 
  And calculate a math using this example
 
@@ -58,7 +58,7 @@ def cross_entropy(Y, P):
 
 ## Multiclass Cross Entropy
 
-![1571203421674](C:\Users\Shudipto Trafder\AppData\Roaming\Typora\typora-user-images\1571203421674.png)
+![1571203421674](https://github.com/Iamsdt/UdacityDeepLearningNanodegree/raw/master/img/1571203421674.png)
 
 Where, 
 
